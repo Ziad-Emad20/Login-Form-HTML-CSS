@@ -8,15 +8,15 @@
 </head>
 <body>
     <section class="form_container">
-        <form action="">
+        <form action="" method="get">
             <h1 class="title_login">Login</h1>
             <!-- User Name -->
             <div class="userName">
-                <input type="text" id="userName" placeholder="User Name" required>
+                <input type="text" id="userName" autocomplete="no" placeholder="User Name" required name="un">
             </div>
             <!-- Password -->
             <div class="password">
-                <input type="password" id="password" placeholder="Password">
+                <input type="password" id="password" placeholder="Password" name="password" required >
             </div>
             <!-- Remember and Forget -->
             <div class="container_Remember">
@@ -28,6 +28,7 @@
             </div>
             <!-- Send Form -->
             <input type="submit" value="Login">
+            <p class="end_Register">Don't have an account? <a href="#">Register</a></p>
         </form>
     </section>
 </body>

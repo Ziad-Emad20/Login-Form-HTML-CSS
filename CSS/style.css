@@ -2,8 +2,9 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('/Image/background.jpg');
+    background-image: url("/Image/background.jpg");
     background-size: cover;
+    box-sizing: border-box;
 }
 .form_container{
     height: 100vh;
@@ -13,27 +14,58 @@ body{
 }
 .form_container .title_login{
     text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bolder;
 }
 form{
-    width: 20%;
+    width: 25%;
 }
 .form_container input[type="text"],
 .form_container input[type="password"],
 .form_container input[type="submit"] {
-    width: 100%;
-    padding: 1rem 1rem 1rem 1.5rem ;
+    width: 95%;
+    padding: 1rem 0rem 1rem  1rem ;
+    margin-top: 1rem;
     border-radius: 30px;
-    border: none;
+    border: 1px solid #ffffff84;
     outline: none;
-    margin-bottom: 1rem  ;
-    font-size: 17px;
-    background-color: #ffffffa5;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+    transition: .5s;
+}
+.form_container input[type="text"]::placeholder,
+.form_container input[type="password"]::placeholder{
+    color: #ffffff;
+}
+.form_container input[type="submit"] {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+} 
+.form_container input[type="submit"]:hover{
+    background-color: transparent;
+    color: #ffffff;
 }
 .form_container .container_Remember {
     display: flex;
     justify-content: space-between;
+    margin: 1rem 0 2rem;
+    color: #ffffff;
 }
-/* .form_container input[type="submit"] {
-    width: 100%;
-} */
- 
+
+
+
+.form_container .end_Register{
+    color: #ffffff;
+    text-align: center;
+}
+/* All Link Style */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+
